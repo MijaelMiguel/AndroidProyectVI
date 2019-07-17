@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:text="Necesitas Tener Creada una cuenta para iniciar la aplicacion"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="CREAR CUENTA"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#C8C9CB"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        
+        <EditText
+            android:id="@+id/LogEdtUserName"
+            android:layout_marginTop="20dp"
+            android:hint="Usuario"
+            android:inputType="textCapCharacters"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <requestFocus/>
+        </EditText>
+        <EditText
+            android:id="@+id/LogEdtUserPass"
+            android:drawableLeft="@drawable/ic_action_key"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword|textCapCharacters"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/LogChbRecord"
+            android:checked="false"
+            android:padding="5dp"
+            android:text="Recordarme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:id="@+id/LogBtnLogin"
+                android:text="Ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
